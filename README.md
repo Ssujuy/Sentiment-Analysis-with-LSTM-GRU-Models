@@ -468,6 +468,16 @@ plotCurves(trainingLossEpoch, trainingAccuracyEpoch, validationLossEpoch, valida
 
 ## Result images
 
+- **Training and Validation Loss Convergence:** The loss curves indicate that both training and validation losses decrease steadily, stabilizing after a few epochs. This suggests that the model learns effectively without signs of significant overfitting or underfitting.
+
+- **High Accuracy:** The accuracy plots show both training and validation accuracies approaching and stabilizing around 90%, demonstrating strong model performance in classifying the sentiment.
+
+- **Balanced Precision and Recall:** The classification report highlights a well-balanced precision and recall across both classes (0 and 1), with precision at 0.84 and 0.90 and recall at 0.91 and 0.83, respectively. This balance indicates the model is effectively distinguishing between positive and negative sentiment.
+
+- **ROC Curve Performance:** The ROC curve shows high AUC values (0.87 for both classes and 0.90 micro-average), suggesting good separability between the classes. The curves close to the top-left corner imply strong predictive performance.
+
+- **Consistency in Macro and Micro Averages:** The macro and micro averages in both the classification report and ROC curves are consistent, reinforcing that the model performs well across all metrics and has generalized well across both classes.
+
 ![Classification Report](images/classificationReport.png)
 ![Accurracy Loss](images/AccuracyLoss.png)
 ![ROC Curves](images/rocCurves.png)
