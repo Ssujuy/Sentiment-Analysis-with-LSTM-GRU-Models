@@ -1,7 +1,21 @@
 # Sentiment-Analysis-with-LSTM-GRU-Models
+
 ## Sentiment Analysis of IMDB Movie Reviews Using LSTM/GRU Models with Multi-Head Attention in PyTorch
 
 - This project aims to perform sentiment analysis on IMDB movie reviews using LSTM (Long Short-Term Memory) or GRU (Gated Recurrent Unit) neural networks enhanced with multi-head attention mechanisms. The implementation leverages PyTorch and its associated libraries for natural language processing tasks.
+
+## Table of Contents
+- [Imports and Prerequisites](#imports-and-prerequisites)
+- [Helper Functions](#helper-functions)
+- [Data Filtering and Tokenization](#data-filtering-and-tokenization)
+- [Training](#training)
+- [Validation](#validation)
+- [Plotting Curves](#plotting-curves)
+- [LSTMGRU Model Class](#lstmgru-model-class)
+- [Main](#main)
+- [Result Analysis](#result-analysis)
+- [Result Images](#result-images)
+- [Conclusion](#conclusion)
 
 ## Imports and Prerequisites
 
@@ -448,9 +462,15 @@ plotCurves(trainingLossEpoch, trainingAccuracyEpoch, validationLossEpoch, valida
 
 - **Model Evaluation:**
 
-- The use of multi-head attention enhances the model's ability to focus on important parts of the text.
-- Bidirectional RNNs capture context from both past and future tokens, improving understanding.
-- The choice between LSTM and GRU depends on performance and computational considerations.
+  - The use of multi-head attention enhances the model's ability to focus on important parts of the text.
+  - Bidirectional RNNs capture context from both past and future tokens, improving understanding.
+  - The choice between LSTM and GRU depends on performance and computational considerations.
+
+## Result images
+
+![Classification Report](images/classificationReport.png)
+![Accurracy Loss](images/AccuracyLoss.png)
+![ROC Curves](images/rocCurves.png)
 
 ## Conclusion
 
